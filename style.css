@@ -1,0 +1,159 @@
+/* CSS untuk styling halaman web todo list */
+
+/* Style dasar untuk body */
+body {
+    background-color: #f4f4f4; /* Warna latar belakang */
+    color: #333; /* Warna teks */
+    font-family: Arial, sans-serif; /* Font family */
+    margin: 0; /* Menghilangkan margin */
+    padding: 0; /* Menghilangkan padding */
+}
+
+/* Style untuk container utama */
+.container {
+    max-width: 600px; /* Lebar maksimum */
+    margin: 0 auto; /* Tengah secara horizontal */
+    padding: 20px; /* Padding di dalam container */
+    background-color: #fff; /* Warna latar belakang */
+    border-radius: 8px; /* Border radius sudut */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow box tipis */
+}
+
+/* Style untuk judul utama */
+h1 {
+    font-size: 24px; /* Ukuran font */
+    margin-bottom: 20px; /* Jarak ke bawah */
+}
+
+/* Style untuk input teks dan tanggal */
+input[type="text"],
+input[type="date"] {
+    width: calc(100% - 22px); /* Lebar input dikurangi padding dan border */
+    padding: 10px; /* Padding dalam input */
+    margin: 5px 0; /* Margin atas dan bawah */
+    border: 1px solid #ddd; /* Border dengan warna dan ketebalan */
+    border-radius: 4px; /* Border radius sudut */
+}
+
+/* Style untuk tombol umum */
+button,
+.btn {
+    display: inline-block; /* Menampilkan sebagai inline block */
+    padding: 10px 15px; /* Padding dalam tombol */
+    border: none; /* Tanpa border */
+    border-radius: 4px; /* Border radius sudut */
+    color: #fff; /* Warna teks */
+    cursor: pointer; /* Kursor pointer */
+    text-align: center; /* Teks ditengah */
+    font-size: 14px; /* Ukuran font */
+    text-decoration: none; /* Tanpa dekorasi teks */
+    margin-right: 5px; /* Jarak antar tombol */
+}
+
+/* Style untuk tombol pencarian */
+.btn-search {
+    background-color: #007bff; /* Warna latar belakang */
+}
+
+.btn-search:hover {
+    background-color: #0056b3; /* Warna latar belakang saat hover */
+}
+
+/* Style untuk tombol tambah */
+.btn-add {
+    background-color: #28a745; /* Warna latar belakang */
+}
+
+.btn-add:hover {
+    background-color: #218838; /* Warna latar belakang saat hover */
+}
+
+/* Style untuk tombol perbarui */
+.btn-update {
+    background-color: #ffc107; /* Warna latar belakang */
+    color: #333; /* Warna teks */
+}
+
+.btn-update:hover {
+    background-color: #e0a800; /* Warna latar belakang saat hover */
+}
+
+/* Style untuk tombol hapus */
+.btn-delete {
+    background-color: #dc3545; /* Warna latar belakang */
+}
+
+.btn-delete:hover {
+    background-color: #c82333; /* Warna latar belakang saat hover */
+}
+
+/* Style untuk tombol toggle */
+.btn-toggle {
+    background-color: #17a2b8; /* Warna latar belakang */
+}
+
+.btn-toggle:hover {
+    background-color: #138496; /* Warna latar belakang saat hover */
+}
+
+/* Style untuk tombol edit */
+.btn-edit {
+    background-color: #007bff; /* Warna latar belakang */
+}
+
+.btn-edit:hover {
+    background-color: #0056b3; /* Warna latar belakang saat hover */
+}
+
+/* Style untuk tombol batal */
+.btn-cancel {
+    background-color: #6c757d; /* Warna latar belakang */
+}
+
+.btn-cancel:hover {
+    background-color: #5a6268; /* Warna latar belakang saat hover */
+}
+
+/* Style untuk daftar unordered list (ul) */
+ul {
+    list-style: none; /* Menghilangkan tanda bullet list */
+    padding: 0; /* Menghilangkan padding */
+    margin: 0; /* Menghilangkan margin */
+}
+
+/* Style untuk setiap item list (li) */
+li {
+    padding: 10px; /* Padding dalam item */
+    border-bottom: 1px solid #ddd; /* Garis pemisah antar item */
+    display: flex; /* Menampilkan secara flex */
+    align-items: center; /* Memposisikan ke tengah vertikal */
+    justify-content: space-between; /* Menyusun ke sisi kanan dan kiri */
+}
+
+/* Style untuk item list yang sudah selesai */
+li.done {
+    text-decoration: line-through; /* Garis melintang untuk teks */
+    color: #888; /* Warna teks abu-abu */
+}
+
+/* Style untuk tanggal jatuh tempo */
+.due-date {
+    color: #888; /* Warna teks abu-abu */
+    margin-left: 10px; /* Jarak kiri */
+}
+
+/* Style untuk container aksi di dalam item list */
+.actions {
+    display: flex; /* Menampilkan secara flex */
+    align-items: center; /* Memposisikan ke tengah vertikal */
+}
+
+/* Style untuk form actions (batal, hapus, dll) */
+.form-actions {
+    margin-top: 10px; /* Jarak atas */
+}
+
+.form-actions a,
+.form-actions button {
+    margin-right: 5px; /* Jarak antar tombol */
+}
